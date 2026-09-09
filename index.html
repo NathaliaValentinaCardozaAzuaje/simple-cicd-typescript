@@ -35,17 +35,19 @@
 
       switch (op) {
         case '+':
-          res = window.sum ? window.sum(a, b) : sum(a, b);
+          res = sum(a, b);
           break;
         case '-':
-          res = window.substract(a, b);
+          res = substract(a, b);
           break;
         case '*':
-          res = window.multiply(a, b);
+          res = multiply(a, b);
           break;
         case '/':
-          res = window.divide(a, b);
+          res = divide(a, b);
           break;
+        default:
+          res = 'Invalid operation';
       }
 
       document.getElementById('result').textContent = res !== null ? res : 'Error';
