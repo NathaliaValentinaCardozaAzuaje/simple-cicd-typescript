@@ -9,4 +9,4 @@ function divide(a: number, b: number): number {
 }
 
 // Expose to window so the HTML script can call it
-(window as any).divide = divide;
+window.divide = divide;
